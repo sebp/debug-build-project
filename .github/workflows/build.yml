@@ -47,6 +47,12 @@ jobs:
         shell: pwsh
         run: conda install setuptools && conda run pip install build
 
+      - name: List packages
+        shell: pwsh
+        run: |
+          conda list
+          conda info
+
       - name: Build
         run: conda run python -m build
 
