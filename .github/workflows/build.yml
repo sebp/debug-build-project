@@ -27,6 +27,7 @@ jobs:
       - name: Build
         run: python -m build
 
+  build-conda:
     name: Conda
     runs-on: windows-latest
 
